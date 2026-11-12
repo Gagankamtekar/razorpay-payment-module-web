@@ -1,12 +1,12 @@
 # Razorpay Payment Module
 
 ## Setup
-1. `cd backend && npm install`
-2. Copy `backend/.env.example` to `backend/.env` and fill in your keys.
-3. Create tables: `node backend/database/migrate.js --db "MYSQL" --user "root" --pass "your_password"`
+1. `cd razorpay-backend && npm install`
+2. Copy `razorpay-backend/.env.example` to `razorpay-backend/.env` and fill in your keys.
+3. Create tables: `node razorpay-backend/database/migrate.js --db "MYSQL" --user "root" --pass "your_password"`
 
 ## Express
-    const payments = require('./backend/paymentApis');
+    const payments = require('./razorpay-backend/paymentApis');
     app.use(express.json());
     app.use('/api/payments', payments);
 
